@@ -15,18 +15,18 @@
   </head>
   <body>
     <header class="container">
-      <nav>
+      <nav class="nav">
         <a href="#" class="logo">WebStudio</a>
-        <ul class="nav-list">
-          <li class="item"><a href="" class="active">Studio</a></li>
-          <li class="item">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="" class="active">Studio</a></li>
+          <li class="nav__item">
             <a href="./portfolio.html" class="active-hrv">Portfolio</a>
           </li>
-          <li class="item"><a href="" class="active-hrv">Contacts</a></li>
+          <li class="nav__item"><a href="" class="active-hrv">Contacts</a></li>
         </ul>
-        <ul class="nav-contacts">
-          <li class="item">
-            <a class="mail" href="mailto:info@devstudio.com">
+        <ul class="nav__contacts">
+          <li class="nav__item">
+            <a class="nav__email-icon" href="mailto:info@devstudio.com">
               <svg class="icons-list" width="16" height="12">
                 <use
                   href="./images/icons-sprite/icons-sprite.svg#envelope-icon"
@@ -35,8 +35,8 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="item">
-            <a class="mobile" href="tel:+1 212-772-4150">
+          <li class="nav__item">
+            <a class="nav__mobile-icon" href="tel:+1 212-772-4150">
               <svg class="icons-list" width="10" height="16">
                 <use
                   href="./images/icons-sprite/icons-sprite.svg#mobile-icon"
@@ -78,8 +78,8 @@
 
                 <label for="" class="field-form">
                   <input type="text" placeholder=" " />
-                  <span class="field-form-span-label">Name</span>
-                  <svg class="new-span-icon name-form-icon">
+                  <span class="field-form__text">Name</span>
+                  <svg class="field-form__icon name__form-icon">
                     <use
                       href="./images/icons-sprite/icons-sprite.svg#name-form-icon"
                     ></use>
@@ -87,8 +87,8 @@
                 </label>
                 <label for="tel" class="field-form">
                   <input type="tel" placeholder=" " />
-                  <span class="field-form-span-label">Telephone</span>
-                  <svg class="new-span-icon phone-form-icon">
+                  <span class="field-form__text">Telephone</span>
+                  <svg class="field-form__icon phone__form-icon">
                     <use
                       href="./images/icons-sprite/icons-sprite.svg#phone-form-icon"
                     ></use>
@@ -96,8 +96,8 @@
                 </label>
                 <label for="email" class="field-form">
                   <input type="email" id="email" placeholder=" " />
-                  <span class="field-form-span-label">E-mail</span>
-                  <svg class="new-span-icon email-form-icon">
+                  <span class="field-form__text">E-mail</span>
+                  <svg class="field-form__icon email__form-icon">
                     <use
                       href="./images/icons-sprite/icons-sprite.svg#email-form-icon"
                     ></use>
@@ -113,23 +113,6 @@
                     placeholder="Enter the text"
                   ></textarea>
                 </div>
-                <!-- <div class="field-form flex-form">
-                  <label for="agree-check" class="label-checkbox-form"
-                    >I agree with the newsletter and accept the Terms and
-                    Conditions</label>
-                  <input
-                    class="checkbox-form"
-                    type="checkbox"
-                    name="agree-check"
-                    id="agree-check"
-                    checked
-                  />
-                  <svg class="new-span-icon check-form-icon">
-                    <use
-                      href="./images/icons-sprite/icons-sprite.svg#check-form-icon"
-                    ></use>
-                  </svg>
-                </div> -->
 
                 <label for="agree-check" class="field-form flex-form">
                   <input
@@ -139,12 +122,7 @@
                     id="agree-check"
                     checked
                   />
-                  <span class="check-form-icon"></span>
-                  <!-- <svg class="new-span-icon check-form-icon">
-                    <use
-                      href="./images/icons-sprite/icons-sprite.svg#check-form-icon"
-                    ></use>
-                  </svg> -->
+                  <span class="check__form-icon"></span>
                   <span class="label-checkbox-form"
                     >I agree with the newsletter and accept the Terms and
                     Conditions</span
@@ -157,10 +135,10 @@
         </div>
       </section>
       <section class="container">
-        <ul class="soft-skills-list">
+        <ul class="soft-skills-section">
           <li>
-            <div class="soft-skills-icons-div">
-              <svg class="soft-skills-icons-list" width="65" height="70">
+            <div class="soft-skills__icons-div">
+              <svg class="soft-skills__icons-list" width="65" height="70">
                 <use
                   href="./images/icons-sprite/icons-sprite.svg#attention-to-details-icon"
                 ></use>
@@ -173,8 +151,8 @@
             </p>
           </li>
           <li>
-            <div class="soft-skills-icons-div">
-              <svg class="soft-skills-icons-list" width="67" height="70">
+            <div class="soft-skills__icons-div">
+              <svg class="soft-skills__icons-list" width="67" height="70">
                 <use
                   href="./images/icons-sprite/icons-sprite.svg#punctuality-icon"
                 ></use>
@@ -187,8 +165,8 @@
             </p>
           </li>
           <li>
-            <div class="soft-skills-icons-div">
-              <svg class="soft-skills-icons-list" width="70" height="70">
+            <div class="soft-skills__icons-div">
+              <svg class="soft-skills__icons-list" width="70" height="70">
                 <use
                   href="./images/icons-sprite/icons-sprite.svg#planning-icon"
                 ></use>
@@ -201,8 +179,8 @@
             </p>
           </li>
           <li>
-            <div class="soft-skills-icons-div">
-              <svg class="soft-skills-icons-list" width="70" height="70">
+            <div class="soft-skills__icons-div">
+              <svg class="soft-skills__icons-list" width="70" height="70">
                 <use
                   href="./images/icons-sprite/icons-sprite.svg#modern-technologies-icon"
                 ></use>
@@ -218,7 +196,7 @@
         <h2 class="secondary-title">What we do</h2>
         <ul class="what-we-do-list">
           <li>
-            <div class="what-we-do-list-content">
+            <div class="what-we-do-list__content">
               <img
                 src="./images/what-we-do-1.jpg"
                 alt="whatwedo-desktop-apps"
@@ -229,13 +207,13 @@
             </div>
           </li>
           <li>
-            <div class="what-we-do-list-content">
+            <div class="what-we-do-list__content">
               <img src="./images/what-we-do-2.jpg" alt="whatwedo-mobile-apps" />
               <p>Mobile Apps</p>
             </div>
           </li>
           <li>
-            <div class="what-we-do-list-content">
+            <div class="what-we-do-list__content">
               <img
                 src="./images/what-we-do-3.jpg"
                 alt="whatwedo--design-solutions"
@@ -248,8 +226,8 @@
       <section class="our-team">
         <div class="container">
           <h2 class="secondary-title gray-bg">Our Team</h2>
-          <ul class="our-team-list">
-            <li class="person">
+          <ul class="our-team__list">
+            <li class="our-team__person">
               <img
                 src="./images/photo-1.jpg"
                 alt="Product Designer"
@@ -258,10 +236,10 @@
               />
               <h2>Christopher Walker</h2>
               <p>Product Designer</p>
-              <ul class="team-social-icon-list">
+              <ul class="team-social__icon-list">
                 <li>
                   <a href="">
-                    <svg class="icon-fill" width="20" height="20">
+                    <svg class="team-social__icon" width="20" height="20">
                       <use
                         href="./images/icons-sprite/icons-sprite.svg#instagram-1"
                       ></use>
@@ -270,7 +248,7 @@
                 </li>
                 <li>
                   <a href="">
-                    <svg class="icon-fill" width="20" height="20">
+                    <svg class="team-social__icon" width="20" height="20">
                       <use
                         href="./images/icons-sprite/icons-sprite.svg#twitter-1"
                       ></use>
@@ -279,7 +257,7 @@
                 </li>
                 <li>
                   <a href="">
-                    <svg class="icon-fill" width="20" height="20">
+                    <svg class="team-social__icon" width="20" height="20">
                       <use
                         href="./images/icons-sprite/icons-sprite.svg#facebook-1"
                       ></use>
@@ -288,7 +266,7 @@
                 </li>
                 <li>
                   <a href="">
-                    <svg class="icon-fill" width="20" height="20">
+                    <svg class="team-social__icon" width="20" height="20">
                       <use
                         href="./images/icons-sprite/icons-sprite.svg#linkedin-1"
                       ></use>
@@ -297,7 +275,7 @@
                 </li>
               </ul>
             </li>
-            <li class="person">
+            <li class="our-team__person">
               <img
                 src="./images/photo-2.jpg"
                 alt="Frontend Developer"
@@ -306,10 +284,10 @@
               />
               <h2>Kylie Evans</h2>
               <p>Frontend Developer</p>
-              <ul class="team-social-icon-list">
+              <ul class="team-social__icon-list">
                 <li>
                   <a href="">
-                    <svg class="icon-fill" width="20" height="20">
+                    <svg class="team-social__icon" width="20" height="20">
                       <use
                         href="./images/icons-sprite/icons-sprite.svg#instagram-1"
                       ></use>
@@ -318,7 +296,7 @@
                 </li>
                 <li>
                   <a href="">
-                    <svg class="icon-fill" width="20" height="20">
+                    <svg class="team-social__icon" width="20" height="20">
                       <use
                         href="./images/icons-sprite/icons-sprite.svg#twitter-1"
                       ></use>
@@ -327,7 +305,7 @@
                 </li>
                 <li>
                   <a href="">
-                    <svg class="icon-fill" width="20" height="20">
+                    <svg class="team-social__icon" width="20" height="20">
                       <use
                         href="./images/icons-sprite/icons-sprite.svg#facebook-1"
                       ></use>
@@ -336,7 +314,7 @@
                 </li>
                 <li>
                   <a href="">
-                    <svg class="icon-fill" width="20" height="20">
+                    <svg class="team-social__icon" width="20" height="20">
                       <use
                         href="./images/icons-sprite/icons-sprite.svg#linkedin-1"
                       ></use>
@@ -345,7 +323,7 @@
                 </li>
               </ul>
             </li>
-            <li class="person">
+            <li class="our-team__person">
               <img
                 src="./images/photo-3.jpg"
                 alt="Marketing"
@@ -354,10 +332,10 @@
               />
               <h2>Ryan Harris</h2>
               <p>Marketing</p>
-              <ul class="team-social-icon-list">
+              <ul class="team-social__icon-list">
                 <li>
                   <a href="">
-                    <svg class="icon-fill" width="20" height="20">
+                    <svg class="team-social__icon" width="20" height="20">
                       <use
                         href="./images/icons-sprite/icons-sprite.svg#instagram-1"
                       ></use>
@@ -366,7 +344,7 @@
                 </li>
                 <li>
                   <a href="">
-                    <svg class="icon-fill" width="20" height="20">
+                    <svg class="team-social__icon" width="20" height="20">
                       <use
                         href="./images/icons-sprite/icons-sprite.svg#twitter-1"
                       ></use>
@@ -375,7 +353,7 @@
                 </li>
                 <li>
                   <a href="">
-                    <svg class="icon-fill" width="20" height="20">
+                    <svg class="team-social__icon" width="20" height="20">
                       <use
                         href="./images/icons-sprite/icons-sprite.svg#facebook-1"
                       ></use>
@@ -384,7 +362,7 @@
                 </li>
                 <li>
                   <a href="">
-                    <svg class="icon-fill" width="20" height="20">
+                    <svg class="team-social__icon" width="20" height="20">
                       <use
                         href="./images/icons-sprite/icons-sprite.svg#linkedin-1"
                       ></use>
@@ -393,7 +371,7 @@
                 </li>
               </ul>
             </li>
-            <li class="person">
+            <li class="our-team__person">
               <img
                 src="./images/photo-4.jpg"
                 alt="UI Designer"
@@ -402,10 +380,10 @@
               />
               <h2>Tyler Moore</h2>
               <p>UI Designer</p>
-              <ul class="team-social-icon-list">
+              <ul class="team-social__icon-list">
                 <li>
                   <a href="">
-                    <svg class="icon-fill" width="20" height="20">
+                    <svg class="team-social__icon" width="20" height="20">
                       <use
                         href="./images/icons-sprite/icons-sprite.svg#instagram-1"
                       ></use>
@@ -414,7 +392,7 @@
                 </li>
                 <li>
                   <a href="">
-                    <svg class="icon-fill" width="20" height="20">
+                    <svg class="team-social__icon" width="20" height="20">
                       <use
                         href="./images/icons-sprite/icons-sprite.svg#twitter-1"
                       ></use>
@@ -423,7 +401,7 @@
                 </li>
                 <li>
                   <a href="">
-                    <svg class="icon-fill" width="20" height="20">
+                    <svg class="team-social__icon" width="20" height="20">
                       <use
                         href="./images/icons-sprite/icons-sprite.svg#facebook-1"
                       ></use>
@@ -432,7 +410,7 @@
                 </li>
                 <li>
                   <a href="">
-                    <svg class="icon-fill" width="20" height="20">
+                    <svg class="team-social__icon" width="20" height="20">
                       <use
                         href="./images/icons-sprite/icons-sprite.svg#linkedin-1"
                       ></use>
@@ -446,13 +424,13 @@
       </section>
       <section class="regular-customers">
         <div class="container">
-          <h2 class="secondary-title regular-customers-title">
+          <h2 class="secondary-title regular-customers__title">
             Regular Customers
           </h2>
-          <ul class="regular-customers-list">
+          <ul class="regular-customers__list">
             <a href="">
               <li>
-                <svg class="regular-customers-icons" width="41" height="47">
+                <svg class="regular-customers__icon" width="41" height="47">
                   <use
                     href="./images/icons-sprite/icons-sprite.svg#first-client"
                   ></use>
@@ -461,7 +439,7 @@
             </a>
             <a href="">
               <li>
-                <svg class="regular-customers-icons" width="40" height="52">
+                <svg class="regular-customers__icon" width="40" height="52">
                   <use
                     href="./images/icons-sprite/icons-sprite.svg#second-client"
                   ></use>
@@ -470,7 +448,7 @@
             </a>
             <a href="">
               <li>
-                <svg class="regular-customers-icons" width="43" height="41">
+                <svg class="regular-customers__icon" width="43" height="41">
                   <use
                     href="./images/icons-sprite/icons-sprite.svg#third-client"
                   ></use>
@@ -479,7 +457,7 @@
             </a>
             <a href="">
               <li>
-                <svg class="regular-customers-icons" width="84" height="41">
+                <svg class="regular-customers__icon" width="84" height="41">
                   <use
                     href="./images/icons-sprite/icons-sprite.svg#fourth-client"
                   ></use>
@@ -488,7 +466,7 @@
             </a>
             <a href="">
               <li>
-                <svg class="regular-customers-icons" width="63" height="46">
+                <svg class="regular-customers__icon" width="63" height="46">
                   <use
                     href="./images/icons-sprite/icons-sprite.svg#fifth-client"
                   ></use>
@@ -497,7 +475,7 @@
             </a>
             <a href="">
               <li>
-                <svg class="regular-customers-icons" width="94" height="44">
+                <svg class="regular-customers__icon" width="94" height="44">
                   <use
                     href="./images/icons-sprite/icons-sprite.svg#sixth-client"
                   ></use>
@@ -510,7 +488,7 @@
     </main>
     <footer>
       <div class="container flex flex-align-items-center">
-        <div class="footer-contacts-block">
+        <div class="footer-contacts">
           <div class="logo2"><a href="#" class="logo">WebStudio</a></div>
           <a
             class="google-map-link"
@@ -518,15 +496,15 @@
             target="_blank"
             >695 Park Ave, New York, NY 10065, United States</a
           >
-          <ul class="footer-contacts">
+          <ul class="footer-contacts__list">
             <li><a href="mailto:info@example.com">info@example.com</a></li>
             <li>
-              <a href="tel:+1 212-772-4150" class="item">+1 212-772-4150</a>
+              <a href="tel:+1 212-772-4150" class="footer-contacts__item">+1 212-772-4150</a>
             </li>
           </ul>
         </div>
         <div class="footer-social">
-          <h2 class="footer-h2">Find us on</h2>
+          <h2 class="footer-title">Find us on</h2>
           <ul class="team-social-icon-list footer-social-icons">
             <li>
               <a href="">
@@ -567,7 +545,7 @@
           </ul>
         </div>
         <div class="footer-form">
-          <h2 class="footer-h2">Subscribe to the newsletter</h2>
+          <h2 class="footer-title">Subscribe to the newsletter</h2>
           <form class="subscribe-form">
             <div class="footer-email-input-block">
               <input
