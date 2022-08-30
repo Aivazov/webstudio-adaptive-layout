@@ -1,0 +1,48 @@
+.team-social-icon-list {
+  width: 100%;
+  margin-bottom: 30px;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.team-social-icon-list li {
+  display: list-item;
+}
+
+.team-social-icon-list li:last-child {
+  padding-right: 0;
+}
+
+/* Color and hover effect transformation of SVG */
+
+.team-social-icon-list a {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: $border-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  outline: none;
+}
+
+/* fill="#afb1b8" style="fill:var(--color4, #afb1b8)" */
+
+.team-social-icon-list a:hover,
+.team-social-icon-list a:focus {
+  background-color: $accent-color;
+}
+
+.icon-fill {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: currentColor;
+}
+
+.team-social-icon-list a:hover .icon-fill,
+.team-social-icon-list a:focus .icon-fill {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  background-color: $accent-color;
+  fill: #ffffff;
+}

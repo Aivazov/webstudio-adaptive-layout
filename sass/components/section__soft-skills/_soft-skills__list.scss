@@ -1,0 +1,17 @@
+.soft-skills-list {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 0;
+  margin-bottom: 100px;
+  width: calc(100% - 2px / 4);
+}
+
+
+.soft-skills-list > li {
+  width: 270px;
+  letter-spacing: 0.03em;
+}
+
+.soft-skills-list > li:last-child {
+  padding-right: 0;
+}

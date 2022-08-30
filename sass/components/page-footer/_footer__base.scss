@@ -1,0 +1,14 @@
+footer,
+footer .container,
+footer a,
+footer p,
+footer ul,
+footer li {
+  background-color: $bg-primary-color;
+}
+
+footer {
+  /* height: 252px; */
+  display: flex;
+  align-items: center;
+}

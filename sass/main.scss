@@ -1,0 +1,48 @@
+@import './base/normalize';
+@import './base/color-pallete';
+@import './base/base-styles';
+@import './components/button';
+
+@import './components/page-nav/nav';
+@import './components/logo';
+@import './components/page-nav/nav-list';
+@import './components/active/active';
+@import './components/active/active-hrv';
+@import './components/page-nav/nav-contacts';
+@import './components/svg-icons/icons-list';
+
+@import './components/section__hero/section-hero';
+@import './components/section__hero/section-hero__image';
+@import './components/section__hero/section-hero__text';
+
+@import './components/modal-window/backdrop';
+@import './components/modal-window/modal-window';
+@import './components/modal-window/request__form';
+
+@import './components/section__soft-skills/soft-skills__list';
+@import './components/section__soft-skills/soft-skills__text';
+@import './components/section__soft-skills/soft-skills_icons';
+@import './components/section__soft-skills/what-to-do';
+
+@import './components/section__our-team/our-team__bg';
+@import './components/section__our-team/our-team__list';
+@import './components/section__our-team/our-team__text';
+@import './components/section__our-team/our-team__icons';
+
+@import './components/section__regular-customers/customers__title';
+@import './components/section__regular-customers/customers__list';
+@import './components/section__regular-customers/customers__icons';
+
+@import './components/page-footer/footer__base';
+@import './components/page-footer/footer__logo';
+@import './components/page-footer/footer__title';
+@import './components/page-footer/footer__contacts-block';
+@import './components/page-footer/footer__social-icons';
+@import './components/page-footer/footer__subscribe-form';
+@import './components/page-footer/footer__subscribe-form--button';
+
+// Portfolio Page
+
+@import './pages/portfolio-page/nav-and-header';
+@import './pages/portfolio-page/gallery__list';
+@import './pages/portfolio-page/buttons-style';
