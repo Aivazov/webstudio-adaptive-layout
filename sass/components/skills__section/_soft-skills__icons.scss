@@ -1,0 +1,15 @@
+.soft-skills__icons-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    max-width: 480;
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: $bg-tertiary-color;
+    border-radius: 4px;
+}
+
+.soft-skills__icons-list {
+    background-color: transparent;
+}

@@ -1,0 +1,14 @@
+.our-team {
+  background-color: $bg-tertiary-color;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1600px) {
+    padding-bottom: 94px;
+  }
+}
+
+.gray-bg {
+  background-color: inherit;
+}
+
+
