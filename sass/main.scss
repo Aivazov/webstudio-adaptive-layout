@@ -8,6 +8,11 @@
 @import "./components/navigation/nav";
 @import "./components/hero__section/hero";
 
+@import './components/modal-window/backdrop';
+@import './components/modal-window/modal-window';
+@import './components/modal-window/request-form';
+@import './components/modal-window/request-form__icons';
+
 @import "./components/skills__section/soft-skills";
 @import "./components/skills__section/soft-skills__icons";
 @import "./components/skills__section/soft-skills__text";
@@ -22,3 +27,8 @@
 
 @import './components/regular-clients__section/regular-clients';
 @import './components/regular-clients__section/regular-clients__icons';
+
+@import './components/footer/footer';
+@import './components/footer/footer__contacts';
+@import './components/footer/footer__icons';
+@import './components/footer/footer__form';

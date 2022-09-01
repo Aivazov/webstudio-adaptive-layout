@@ -55,7 +55,7 @@
           <button href="" class="button hero__button" data-open-modal-window>
             Request our service
           </button>
-          <!-- <div class="backdrop is-hidden" data-backdrop>
+          <div class="backdrop is-hidden" data-backdrop>
             <div class="modal-window">
               <button class="closing-button" data-close-modal-window>
                 <svg class="closing-icon">
@@ -65,9 +65,9 @@
                 </svg>
               </button>
               <form class="request-form">
-                <h2>Leave your information and we'll call you back</h2>
+                <h2 class="request-form__title">Leave your information and we'll call you back</h2>
                 <label for="" class="field-form">
-                  <input type="text" placeholder=" " />
+                  <input class="field-form__input" type="text" placeholder=" " />
                   <span class="field-form__text">Name</span>
                   <svg class="field-form__icon name__form-icon">
                     <use
@@ -76,7 +76,7 @@
                   </svg>
                 </label>
                 <label for="tel" class="field-form">
-                  <input type="tel" placeholder=" " />
+                  <input class="field-form__input" type="tel" placeholder=" " />
                   <span class="field-form__text">Telephone</span>
                   <svg class="field-form__icon phone__form-icon">
                     <use
@@ -85,7 +85,7 @@
                   </svg>
                 </label>
                 <label for="email" class="field-form">
-                  <input type="email" id="email" placeholder=" " />
+                  <input class="field-form__input" type="email" id="email" placeholder=" " />
                   <span class="field-form__text">E-mail</span>
                   <svg class="field-form__icon email__form-icon">
                     <use
@@ -96,6 +96,7 @@
                 <div class="field-form">
                   <label for="comments">Comments</label>
                   <textarea
+                    class="field-form__textarea"
                     name="comments"
                     id="comments"
                     cols="30"
@@ -121,9 +122,12 @@
                 <button type="submit" class="button">Send</button>
               </form>
             </div>
-          </div> -->
+          </div>
         </div>
       </section>
+
+      <!-- SOFT SKILLS SECTION -->
+
       <section class="container">
         <ul class="soft-skills-section">
           <li>
@@ -221,7 +225,8 @@
           <h2 class="secondary-title gray-bg our-team__title">Our Team</h2>
           <ul class="our-team__list">
             <li class="our-team__person">
-              <img class="our-team__img"
+              <img
+                class="our-team__img"
                 src="./images/photo-1.jpg"
                 alt="Product Designer"
                 width="260"
@@ -269,7 +274,8 @@
               </ul>
             </li>
             <li class="our-team__person">
-              <img class="our-team__img"
+              <img
+                class="our-team__img"
                 src="./images/photo-2.jpg"
                 alt="Frontend Developer"
                 width="260"
@@ -317,7 +323,8 @@
               </ul>
             </li>
             <li class="our-team__person">
-              <img class="our-team__img"
+              <img
+                class="our-team__img"
                 src="./images/photo-3.jpg"
                 alt="Marketing"
                 width="260"
@@ -365,7 +372,8 @@
               </ul>
             </li>
             <li class="our-team__person">
-              <img class="our-team__img"
+              <img
+                class="our-team__img"
                 src="./images/photo-4.jpg"
                 alt="UI Designer"
                 width="260"
@@ -482,6 +490,9 @@
         </div>
       </section>
     </main>
+
+    <!-- FOOTER -->
+
     <footer>
       <div class="container flex flex-align-items-center">
         <div class="footer-contacts">
@@ -493,7 +504,11 @@
             >695 Park Ave, New York, NY 10065, United States</a
           >
           <ul class="footer-contacts__list">
-            <li><a href="mailto:info@example.com">info@example.com</a></li>
+            <li>
+              <a href="mailto:info@example.com" class="footer-contacts__item"
+                >info@example.com</a
+              >
+            </li>
             <li>
               <a href="tel:+1 212-772-4150" class="footer-contacts__item"
                 >+1 212-772-4150</a
@@ -503,37 +518,37 @@
         </div>
         <div class="footer-social">
           <h2 class="footer-title">Find us on</h2>
-          <ul class="team-social-icon-list footer-social-icons">
-            <li>
-              <a href="">
-                <svg class="footer-social-icons-list" width="20" height="20">
+          <ul class="team-social__icon-list footer-social__icons-list">
+            <li class="footer-social__icons-list__item">
+              <a href="" class="team-social__link footer-social__icons-link">
+                <svg class="footer-social__icons" width="20" height="20">
                   <use
                     href="./images/icons-sprite/icons-sprite.svg#instagram-1"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="">
-                <svg class="footer-social-icons-list" width="20" height="20">
+            <li class="footer-social__icons-list__item">
+              <a href="" class="team-social__link footer-social__icons-link">
+                <svg class="footer-social__icons" width="20" height="20">
                   <use
                     href="./images/icons-sprite/icons-sprite.svg#twitter-1"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="">
-                <svg class="footer-social-icons-list" width="20" height="20">
+            <li class="footer-social__icons-list__item">
+              <a href="" class="team-social__link footer-social__icons-link">
+                <svg class="footer-social__icons" width="20" height="20">
                   <use
                     href="./images/icons-sprite/icons-sprite.svg#facebook-1"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="">
-                <svg class="footer-social-icons-list" width="20" height="20">
+            <li class="footer-social__icons-list__item">
+              <a href="" class="team-social__link footer-social__icons-link">
+                <svg class="footer-social__icons" width="20" height="20">
                   <use
                     href="./images/icons-sprite/icons-sprite.svg#linkedin-1"
                   ></use>
@@ -545,17 +560,18 @@
         <div class="footer-form">
           <h2 class="footer-title">Subscribe to the newsletter</h2>
           <form class="subscribe-form">
-            <div class="footer-email-input-block">
+            <div class="footer__email-input-block">
               <input
+                class="footer__email-input"
                 type="email"
                 name="email"
                 id="footer-email"
                 placeholder=" "
               />
-              <label for="" class="footer-email-label">E-mail</label>
+              <label for="" class="footer__email-label">E-mail</label>
             </div>
             <button class="button footer-button">
-              <span>Subscribe</span>
+              <span class="footer-button__label">Subscribe</span>
               <svg class="icon-send">
                 <use
                   href="./images/icons-sprite/icons-sprite.svg#icon-send"

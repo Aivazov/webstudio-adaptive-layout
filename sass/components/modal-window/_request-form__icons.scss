@@ -1,0 +1,23 @@
+.field-form__icon {
+  position: absolute;
+  top: 7%;
+  left: 15px;
+
+  fill: $primary-text-color;
+  transition: fill 250ms linear;
+}
+
+.name__form-icon {
+    width: 12px;
+    height: 12px;
+}
+
+.phone__form-icon {
+    width: 13px;
+    height: 13px;
+}
+
+.email__form-icon {
+    width: 15px;
+    height: 12px;
+}

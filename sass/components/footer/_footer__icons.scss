@@ -1,0 +1,21 @@
+.footer-social__icons {
+  margin-bottom: 0;
+}
+
+.footer-social__icons-list__item {
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer-social__icons-link {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social__icons {
+  background-color: transparent;
+  fill: $tertiary-text-color;
+  margin-bottom: 0;
+}

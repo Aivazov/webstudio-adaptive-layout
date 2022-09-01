@@ -1,0 +1,35 @@
+footer,
+footer .container,
+footer a,
+footer p,
+footer ul,
+footer li,
+footer h2,
+.footer-social,
+.footer-social__icons,
+.footer-form,
+.subscribe-form,
+.footer__email-input,
+.footer__email-label,
+.footer__email-input-block {
+  background-color: $bg-primary-color;
+}
+
+footer {
+  @media screen and (min-width: 1600px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.footer-title {
+  color: $tertiary-text-color;
+  text-transform: uppercase;
+  line-height: 1.1428;
+  margin-bottom: 20px;
+  text-align: center;
+
+  @media screen and (min-width: 1600px) {
+    text-align: left;
+  }
+}

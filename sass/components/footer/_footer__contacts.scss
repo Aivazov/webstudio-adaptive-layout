@@ -1,0 +1,68 @@
+.footer-contacts {
+  background-color: inherit;
+
+  &:hover .google-map-link,
+  &:focus .google-map-link {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  @media screen and (min-width: 1600px) {
+    text-align: left;
+  }
+}
+
+.logo2 {
+  display: block;
+  padding-top: 60px;
+  background-color: $bg-primary-color;
+  padding-bottom: 9px;
+  text-align: center;
+
+  @media screen and (min-width: 1600px) {
+    text-align: left;
+  }
+}
+
+.google-map-link {
+  display: block;
+  color: $tertiary-text-color;
+  line-height: 1.714;
+  width: 231px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 6px;
+
+  @media screen and (min-width: 1600px) {
+    text-align: left;
+  }
+}
+
+.footer-contacts__list {
+  display: block;
+  margin-bottom: 48px;
+}
+
+.footer-contacts__item {
+  display: block;
+  color: $tertiary-text-color;
+  opacity: 0.6;
+  color: rgba(255, 255, 255, 0.6);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+  margin-bottom: 8px;
+
+  &:hover,
+  &:focus {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  @media screen and (min-width: 1600px) {
+    text-align: left;
+    margin-bottom: 9px;
+  }
+}
+
+.footer-social__icons-list {
+  margin-bottom: 60px;
+}

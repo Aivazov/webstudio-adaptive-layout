@@ -5,10 +5,27 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 60px;
 
   @media screen and (min-width: 1600px) {
     margin-bottom: 94px;
     flex-wrap: nowrap;
+  }
+}
+
+.regular-customers__link {
+  &:nth-child(2n + 1) {
+    margin-bottom: 30px;
+  }
+
+  &:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1600px) {
+    &:nth-child(2n + 1) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -20,10 +37,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  &:nth-child(2n + 1) {
-    margin-bottom: 30px;
-  }
 
   &:hover {
     border: 1px solid $accent-color;
