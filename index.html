@@ -65,9 +65,15 @@
                 </svg>
               </button>
               <form class="request-form">
-                <h2 class="request-form__title">Leave your information and we'll call you back</h2>
+                <h2 class="request-form__title">
+                  Leave your information and we'll call you back
+                </h2>
                 <label for="" class="field-form">
-                  <input class="field-form__input" type="text" placeholder=" " />
+                  <input
+                    class="field-form__input"
+                    type="text"
+                    placeholder=" "
+                  />
                   <span class="field-form__text">Name</span>
                   <svg class="field-form__icon name__form-icon">
                     <use
@@ -85,7 +91,12 @@
                   </svg>
                 </label>
                 <label for="email" class="field-form">
-                  <input class="field-form__input" type="email" id="email" placeholder=" " />
+                  <input
+                    class="field-form__input"
+                    type="email"
+                    id="email"
+                    placeholder=" "
+                  />
                   <span class="field-form__text">E-mail</span>
                   <svg class="field-form__icon email__form-icon">
                     <use
@@ -93,8 +104,10 @@
                     ></use>
                   </svg>
                 </label>
-                <div class="field-form">
-                  <label for="comments">Comments</label>
+                <div class="field-form__textarea-block">
+                  <label for="comments" class="field-form__text-comments"
+                    >Comments</label
+                  >
                   <textarea
                     class="field-form__textarea"
                     name="comments"
@@ -111,15 +124,16 @@
                     type="checkbox"
                     name="agree-check"
                     id="agree-check"
-                    checked
                   />
                   <span class="check__form-icon"></span>
-                  <span class="label-checkbox-form"
+                  <span class="checkbox-form__text"
                     >I agree with the newsletter and accept the Terms and
                     Conditions</span
                   >
                 </label>
-                <button type="submit" class="button">Send</button>
+                <button type="submit" class="button button__d-block">
+                  Send
+                </button>
               </form>
             </div>
           </div>

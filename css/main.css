@@ -446,6 +446,10 @@ section .container {
 .field-form {
   position: relative;
 }
+.field-form:focus-within .field-form__text {
+  -webkit-transform: translate(-43px, -30px);
+          transform: translate(-43px, -30px);
+}
 .field-form:hover .field-form__icon {
   fill: #2196f3;
 }
@@ -483,19 +487,37 @@ section .container {
 }
 
 .field-form__input {
+  margin-bottom: 28px;
   padding-left: 42px;
+}
+.field-form__input:not(:-moz-placeholder-shown) + .field-form__text {
+  transform: translate(-43px, -30px);
+}
+.field-form__input:not(:-ms-input-placeholder) + .field-form__text {
+  transform: translate(-43px, -30px);
+}
+.field-form__input:not(:placeholder-shown) + .field-form__text {
+  -webkit-transform: translate(-43px, -30px);
+          transform: translate(-43px, -30px);
 }
 .field-form__input:focus ~ .field-form__icon {
   fill: #2196f3;
 }
 
 .field-form__textarea {
+  height: 120px;
   margin-bottom: 0;
+}
+
+.field-form__comments {
+  position: absolute;
+  top: -15%;
+  left: 0;
 }
 
 .field-form__text {
   position: absolute;
-  top: 5%;
+  top: 2%;
   left: 42px;
   -webkit-transform: translate(0);
           transform: translate(0);
@@ -504,14 +526,81 @@ section .container {
   transition: transform 250ms linear;
   transition: transform 250ms linear, -webkit-transform 250ms linear;
   margin-bottom: 4px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.16666;
   letter-spacing: 0.01em;
 }
 
+.field-form__text-comments {
+  position: absolute;
+  top: -15%;
+  left: 0;
+}
+
+.field-form__textarea-block {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.flex-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.checkbox-form {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  /* position: absolute; */
+  /* absolute doesn't work correctly because of another type of preferences */
+  /* position: absolute; */
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.checkbox-form:checked + .check__form-icon {
+  background-image: url("../images/icons-sprite/icon-check.svg");
+  background-color: #2196f3;
+  background-size: contain;
+  border-radius: 3px;
+  border-color: #2196f3;
+  background-origin: border-box;
+}
+
+.check__form-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 2px solid black;
+  width: 16px;
+  height: 15px;
+  fill: black;
+  border-radius: 2px;
+}
+
+.checkbox-form__text {
+  margin-left: 24px;
+  font-size: 12px;
+  text-align: left;
+}
+
+.button__d-block {
+  display: block;
+  margin: 20px auto 40px auto;
+}
+
 .field-form__icon {
   position: absolute;
-  top: 7%;
+  top: 3%;
   left: 15px;
   fill: #212121;
   -webkit-transition: fill 250ms linear;

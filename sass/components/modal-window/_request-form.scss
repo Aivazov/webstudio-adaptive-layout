@@ -23,6 +23,10 @@
 .field-form {
   position: relative;
 
+  &:focus-within .field-form__text {
+    transform: translate(-43px, -30px);
+  }
+
   &:hover .field-form__icon {
     fill: $accent-color;
   }
@@ -56,7 +60,12 @@
 }
 
 .field-form__input {
+  margin-bottom: 28px;
   padding-left: 42px;
+
+  &:not(:placeholder-shown) + .field-form__text {
+    transform: translate(-43px, -30px);
+  }
 
   &:focus ~ .field-form__icon {
     fill: $accent-color;
@@ -64,18 +73,89 @@
 }
 
 .field-form__textarea {
+  height: 120px;
   margin-bottom: 0;
+}
+
+.field-form__comments {
+  position: absolute;
+  top: -15%;
+  left: 0;
 }
 
 .field-form__text {
   position: absolute;
-  top: 5%;
+  top: 2%;
   left: 42px;
 
   transform: translate(0);
   transition: transform 250ms linear;
   margin-bottom: 4px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.16666;
   letter-spacing: 0.01em;
+}
+
+.field-form__text-comments {
+  position: absolute;
+  top: -15%;
+  left: 0;
+}
+
+.field-form__textarea-block {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.flex-form {
+  display: flex;
+  flex-direction: row;
+  // margin: 0 auto;
+}
+
+.checkbox-form {
+  appearance: none;
+  /* position: absolute; */
+
+  /* absolute doesn't work correctly because of another type of preferences */
+  /* position: absolute; */
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+  &:checked + .check__form-icon {
+    background-image: url("../images/icons-sprite/icon-check.svg");
+    background-color: $accent-color;
+    background-size: contain;
+    border-radius: 3px;
+    border-color: $accent-color;
+    background-origin: border-box;
+  }
+}
+
+.check__form-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  border: 2px solid black;
+  width: 16px;
+  height: 15px;
+  fill: black;
+  border-radius: 2px;
+}
+
+.checkbox-form__text {
+  margin-left: 24px;
+  font-size: 12px;
+  text-align: left;
+}
+
+.button__d-block {
+  display: block;
+  margin: 20px auto 40px auto;
 }

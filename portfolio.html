@@ -244,9 +244,12 @@
         </ul>
       </section>
     </main>
+    
+    <!-- FOOTER -->
+
     <footer>
       <div class="container flex flex-align-items-center">
-        <div class="footer-contacts-block">
+        <div class="footer-contacts">
           <div class="logo2"><a href="#" class="logo">WebStudio</a></div>
           <a
             class="google-map-link"
@@ -254,46 +257,52 @@
             target="_blank"
             >695 Park Ave, New York, NY 10065, United States</a
           >
-          <ul class="footer-contacts">
-            <li><a href="mailto:info@example.com">info@example.com</a></li>
+          <ul class="footer-contacts__list">
             <li>
-              <a href="tel:+1 212-772-4150" class="item">+1 212-772-4150</a>
+              <a href="mailto:info@example.com" class="footer-contacts__item"
+                >info@example.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+1 212-772-4150" class="footer-contacts__item"
+                >+1 212-772-4150</a
+              >
             </li>
           </ul>
         </div>
         <div class="footer-social">
-          <h2 class="footer-h2">Find us on</h2>
-          <ul class="team-social-icon-list footer-social-icons">
-            <li>
-              <a href="">
-                <svg class="footer-social-icons-list" width="20" height="20">
+          <h2 class="footer-title">Find us on</h2>
+          <ul class="team-social__icon-list footer-social__icons-list">
+            <li class="footer-social__icons-list__item">
+              <a href="" class="team-social__link footer-social__icons-link">
+                <svg class="footer-social__icons" width="20" height="20">
                   <use
                     href="./images/icons-sprite/icons-sprite.svg#instagram-1"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="">
-                <svg class="footer-social-icons-list" width="20" height="20">
+            <li class="footer-social__icons-list__item">
+              <a href="" class="team-social__link footer-social__icons-link">
+                <svg class="footer-social__icons" width="20" height="20">
                   <use
                     href="./images/icons-sprite/icons-sprite.svg#twitter-1"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="">
-                <svg class="footer-social-icons-list" width="20" height="20">
+            <li class="footer-social__icons-list__item">
+              <a href="" class="team-social__link footer-social__icons-link">
+                <svg class="footer-social__icons" width="20" height="20">
                   <use
                     href="./images/icons-sprite/icons-sprite.svg#facebook-1"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="">
-                <svg class="footer-social-icons-list" width="20" height="20">
+            <li class="footer-social__icons-list__item">
+              <a href="" class="team-social__link footer-social__icons-link">
+                <svg class="footer-social__icons" width="20" height="20">
                   <use
                     href="./images/icons-sprite/icons-sprite.svg#linkedin-1"
                   ></use>
@@ -303,19 +312,20 @@
           </ul>
         </div>
         <div class="footer-form">
-          <h2 class="footer-h2">Subscribe to the newsletter</h2>
+          <h2 class="footer-title">Subscribe to the newsletter</h2>
           <form class="subscribe-form">
-            <div class="footer-email-input-block">
+            <div class="footer__email-input-block">
               <input
+                class="footer__email-input"
                 type="email"
                 name="email"
                 id="footer-email"
                 placeholder=" "
               />
-              <label for="" class="footer-email-label">E-mail</label>
+              <label for="" class="footer__email-label">E-mail</label>
             </div>
             <button class="button footer-button">
-              <span>Subscribe</span>
+              <span class="footer-button__label">Subscribe</span>
               <svg class="icon-send">
                 <use
                   href="./images/icons-sprite/icons-sprite.svg#icon-send"
