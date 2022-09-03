@@ -22,6 +22,22 @@
   // background-origin: border-box;
   margin-bottom: 60px;
   padding: 118px 0;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    background-size: cover;
+    margin-bottom: 60px;
+
+    max-width: 768px;
+    height: 400px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 94px;
+
+    max-width: 1600px;
+    height: 600px;
+  }
 }
 
 .hero > .container {
@@ -42,6 +58,15 @@
   line-height: 1.3636;
   padding: 0 60px;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 204px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 44px;
+    padding: 0 270px;
+  }
 }
 
 .button {
@@ -58,6 +83,7 @@
   transition: 1s ease;
   border-radius: 4px;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .hero .button:hover {

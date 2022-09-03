@@ -1,5 +1,12 @@
 .our-team__list {
   background: inherit;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .our-team__person {
@@ -11,6 +18,21 @@
   border-radius: 0px 0px 4px 4px;
 
   &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 536px;
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 270px;
+    height: 428px;
     margin-bottom: 0;
   }
 }

@@ -2,4 +2,14 @@
   width: 450px;
   height: 460px;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 374px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 270px;
+    height: 260px;
+  }
 }
