@@ -14,19 +14,19 @@
     <title>WebStudio Portfolio</title>
   </head>
   <body>
-    <header>
-      <nav class="container">
+    <header class="container">
+      <nav class="nav">
         <a href="#" class="logo">WebStudio</a>
-        <ul class="nav-list">
-          <li class="item">
-            <a href="./index.html" class="active-hrv">Studio</a>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="./index.html" class="active-hrv">Studio</a></li>
+          <li class="nav__item">
+            <a href="./portfolio.html" class="active">Portfolio</a>
           </li>
-          <li class="item"><a href="" class="active">Portfolio</a></li>
-          <li class="item"><a href="" class="active-hrv">Contacts</a></li>
+          <li class="nav__item"><a href="" class="active-hrv">Contacts</a></li>
         </ul>
-        <ul class="nav-contacts">
-          <li class="item">
-            <a class="mail" href="mailto:info@devstudio.com">
+        <ul class="nav__contacts">
+          <li class="nav__item">
+            <a class="nav__email-icon" href="mailto:info@devstudio.com">
               <svg class="icons-list" width="16" height="12">
                 <use
                   href="./images/icons-sprite/icons-sprite.svg#envelope-icon"
@@ -35,8 +35,8 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="item">
-            <a class="mobile" href="tel:+1 212-772-4150">
+          <li class="nav__item">
+            <a class="nav__mobile-icon" href="tel:+1 212-772-4150">
               <svg class="icons-list" width="10" height="16">
                 <use
                   href="./images/icons-sprite/icons-sprite.svg#mobile-icon"
@@ -50,196 +50,194 @@
     </header>
     <main>
       <section class="container">
-        <ul class="portfolio-nav">
-          <li>
-            <a href="" class="button active-button margin-right">All</a>
+        <ul class="portfolio__nav">
+          <li class="portfolio__list">
+            <a href="" class="button active-button button-1">All</a>
           </li>
-          <li>
-            <a href="" class="button unactive-button margin-right">Web-sites</a>
+          <li class="portfolio__list">
+            <a href="" class="button unactive-button button-2">Web-sites</a>
           </li>
-          <li>
-            <a href="" class="button unactive-button margin-right">Apps</a>
+          <li class="portfolio__list">
+            <a href="" class="button unactive-button button-3">Apps</a>
           </li>
-          <li>
-            <a href="" class="button unactive-button margin-right">Design</a>
+          <li class="portfolio__list">
+            <a href="" class="button unactive-button button-4">Design</a>
           </li>
-          <li>
-            <a href="" class="button unactive-button margin-right">Marketing</a>
+          <li class="portfolio__list">
+            <a href="" class="button unactive-button button-5">Marketing</a>
           </li>
         </ul>
       </section>
       <section class="portfolio-gallery container">
-        <ul class="gallery-list">
-          <li>
-            <a href="">
-              <img
+        <ul class="gallery__list">
+          <li class="gallery__list-item">
+            <a class="gallery__list-link" href="">
+              <img class="gallery__list-img"
                 src="./images/portfolio-page/portfolio-1.jpg"
                 alt="UI Designer"
-                width="370"
-                height="294"
               />
               <div class="overlay">
-                <p class="overlay-p">
+                <p class="overlay__text">
                   Technoduck is a state-of-the-art coronavirus distribution
                   platform. Companies use this platform for digital espionage
                   and attacks on competitors' secure servers.
                 </p>
               </div>
             </a>
-            <h2>Technoduck</h2>
-            <p>Web-site</p>
+            <h2 class="gallery__list-title">Technoduck</h2>
+            <p class="gallery__list-text">Web-site</p>
           </li>
-          <li>
-            <a href=""
-              ><img
+          <li class="gallery__list-item">
+            <a class="gallery__list-link" href=""
+              ><img class="gallery__list-img"
                 src="./images/portfolio-page/portfolio-2.jpg"
                 alt="UI Designer"
                 width="370"
                 height="294"
               />
               <div class="overlay">
-                <p class="overlay-p">
+                <p class="overlay__text">
                   Technoduck is a state-of-the-art coronavirus distribution
                   platform. Companies use this platform for digital espionage
                   and attacks on competitors' secure servers.
                 </p>
               </div></a
             >
-            <h2>Poster New Orlean vs Golden Star</h2>
-            <p>Design</p>
+            <h2 class="gallery__list-title">Poster New Orlean vs Golden Star</h2>
+            <p class="gallery__list-text">Design</p>
           </li>
-          <li>
-            <a href=""
-              ><img
+          <li class="gallery__list-item">
+            <a class="gallery__list-link" href=""
+              ><img class="gallery__list-img"
                 src="./images/portfolio-page/portfolio-3.jpg"
                 alt="UI Designer"
                 width="370"
                 height="294"
               />
               <div class="overlay">
-                <p class="overlay-p">
+                <p class="overlay__text">
                   Technoduck is a state-of-the-art coronavirus distribution
                   platform. Companies use this platform for digital espionage
                   and attacks on competitors' secure servers.
                 </p>
               </div></a
             >
-            <h2>Seafood Restaurant</h2>
-            <p>Apps</p>
+            <h2 class="gallery__list-title">Seafood Restaurant</h2>
+            <p class="gallery__list-text">Apps</p>
           </li>
-          <li>
-            <a href=""
-              ><img
+          <li class="gallery__list-item">
+            <a class="gallery__list-link" href=""
+              ><img class="gallery__list-img"
                 src="./images/portfolio-page/portfolio-4.jpg"
                 alt="UI Designer"
                 width="370"
                 height="294"
               />
               <div class="overlay">
-                <p class="overlay-p">
+                <p class="overlay__text">
                   Technoduck is a state-of-the-art coronavirus distribution
                   platform. Companies use this platform for digital espionage
                   and attacks on competitors' secure servers.
                 </p>
               </div></a
             >
-            <h2>Project Prime</h2>
-            <p>Marketing</p>
+            <h2 class="gallery__list-title">Project Prime</h2>
+            <p class="gallery__list-text">Marketing</p>
           </li>
-          <li>
-            <a href=""
-              ><img
+          <li class="gallery__list-item">
+            <a class="gallery__list-link" href=""
+              ><img class="gallery__list-img"
                 src="./images/portfolio-page/portfolio-5.jpg"
                 alt="UI Designer"
                 width="370"
                 height="294"
               />
               <div class="overlay">
-                <p class="overlay-p">
+                <p class="overlay__text">
                   Technoduck is a state-of-the-art coronavirus distribution
                   platform. Companies use this platform for digital espionage
                   and attacks on competitors' secure servers.
                 </p>
               </div></a
             >
-            <h2>Project Boxes</h2>
-            <p>Apps</p>
+            <h2 class="gallery__list-title">Project Boxes</h2>
+            <p class="gallery__list-text">Apps</p>
           </li>
-          <li>
-            <a href=""
-              ><img
+          <li class="gallery__list-item">
+            <a class="gallery__list-link" href=""
+              ><img class="gallery__list-img"
                 src="./images/portfolio-page/portfolio-6.jpg"
                 alt="UI Designer"
                 width="370"
                 height="294"
               />
               <div class="overlay">
-                <p class="overlay-p">
+                <p class="overlay__text">
                   Technoduck is a state-of-the-art coronavirus distribution
                   platform. Companies use this platform for digital espionage
                   and attacks on competitors' secure servers.
                 </p>
               </div></a
             >
-            <h2>Inspiration has no Borders</h2>
-            <p>Web-site</p>
+            <h2 class="gallery__list-title">Inspiration has no Borders</h2>
+            <p class="gallery__list-text">Web-site</p>
           </li>
-          <li>
-            <a href=""
-              ><img
+          <li class="gallery__list-item">
+            <a class="gallery__list-link" href=""
+              ><img class="gallery__list-img"
                 src="./images/portfolio-page/portfolio-7.jpg"
                 alt="UI Designer"
                 width="370"
                 height="294"
               />
               <div class="overlay">
-                <p class="overlay-p">
+                <p class="overlay__text">
                   Technoduck is a state-of-the-art coronavirus distribution
                   platform. Companies use this platform for digital espionage
                   and attacks on competitors' secure servers.
                 </p>
               </div></a
             >
-            <h2>Limited Edition</h2>
-            <p>Design</p>
+            <h2 class="gallery__list-title">Limited Edition</h2>
+            <p class="gallery__list-text">Design</p>
           </li>
-          <li>
-            <a href=""
-              ><img
+          <li class="gallery__list-item">
+            <a class="gallery__list-link" href=""
+              ><img class="gallery__list-img"
                 src="./images/portfolio-page/portfolio-8.jpg"
                 alt="UI Designer"
                 width="370"
                 height="294"
               />
               <div class="overlay">
-                <p class="overlay-p">
+                <p class="overlay__text">
                   Technoduck is a state-of-the-art coronavirus distribution
                   platform. Companies use this platform for digital espionage
                   and attacks on competitors' secure servers.
                 </p>
               </div></a
             >
-            <h2>Project LAB</h2>
-            <p>Marketing</p>
+            <h2 class="gallery__list-title">Project LAB</h2>
+            <p class="gallery__list-text">Marketing</p>
           </li>
-          <li>
-            <a href=""
-              ><img
+          <li class="gallery__list-item">
+            <a class="gallery__list-link" href=""
+              ><img class="gallery__list-img"
                 src="./images/portfolio-page/portfolio-9.jpg"
                 alt="UI Designer"
                 width="370"
                 height="294"
               />
               <div class="overlay">
-                <p class="overlay-p">
+                <p class="overlay__text">
                   Technoduck is a state-of-the-art coronavirus distribution
                   platform. Companies use this platform for digital espionage
                   and attacks on competitors' secure servers.
                 </p>
               </div></a
             >
-            <h2>Growing Business</h2>
-            <p>Apps</p>
+            <h2 class="gallery__list-title">Growing Business</h2>
+            <p class="gallery__list-text">Apps</p>
           </li>
         </ul>
       </section>

@@ -1,0 +1,82 @@
+.portfolio__nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 1439px) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+
+.portfolio__list {
+  margin-right: 8px;
+  margin-bottom: 15px;
+  border: none;
+
+  &:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1439px) {
+    margin-bottom: 0;
+  }
+}
+
+.active-button {
+  color: $tertiary-text-color;
+  font-size: 16px;
+  line-height: 1.875;
+  min-width: 200px;
+  background-color: $accent-color;
+  padding: 10px 20px;
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+}
+
+.unactive-button {
+  background-color: $bg-tertiary-color;
+  border-radius: 4px;
+  box-shadow: none;
+  color: $primary-text-color;
+  font-weight: 500;
+  border: none;
+
+  &:hover,
+  &:focus {
+    color: $tertiary-text-color;
+    font-size: 16px;
+    line-height: 1.875;
+    min-width: 200px;
+    background-color: $accent-color;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: 0.4s ease-out;
+  }
+}
+
+.portfolio__nav-button {
+  padding: 6px 0;
+}
+
+.button-1 {
+  padding: 6px 26px 6px 27px;
+}
+
+.button-2 {
+  padding: 6px 31px 6px 30px;
+}
+
+.button-3 {
+  padding: 6px 53px 6px 53px;
+}
+
+.button-4 {
+  padding: 6px 25px 6px 26px;
+}
+
+.button-5 {
+  padding: 6px 27px 6px 26px;
+}

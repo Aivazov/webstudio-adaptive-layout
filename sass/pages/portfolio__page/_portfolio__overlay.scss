@@ -1,0 +1,19 @@
+.overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: translateY(100%);
+  transition: transform 250ms ease;
+  background-color: $accent-color;
+  opacity: 0.9;
+}
+
+.overlay__text {
+  text-align: left;
+  background-color: transparent;
+  padding: 63px 24px 0 24px;
+  color: $tertiary-text-color;
+}
