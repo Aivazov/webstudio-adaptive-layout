@@ -1,0 +1,13 @@
+.footer-social {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 25px;
+  }
+}
+
+.footer-social__icons-list {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}

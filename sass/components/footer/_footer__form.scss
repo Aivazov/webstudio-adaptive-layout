@@ -1,7 +1,7 @@
 .subscribe-form {
-    padding-bottom: 60px;
+  padding-bottom: 60px;
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1440px) {
     display: flex;
     align-items: center;
     justify-content: right;
@@ -12,7 +12,7 @@
   position: relative;
   margin-bottom: 20px;
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1440px) {
     margin-bottom: 0;
   }
 }
@@ -34,7 +34,18 @@
     color: $tertiary-text-color;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin: 0 auto;
+
+    &:focus + .footer__email-label,
+    &:not(:placeholder-shown) + .footer__email-label {
+      transform: translateY(-40px);
+      color: $tertiary-text-color;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
     min-width: 357px;
     margin-right: 8px;
 
@@ -54,7 +65,19 @@
   color: $secondary-text-color;
   transition: transform 250ms linear, color 250ms linear;
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 16px;
+    left: 161px;
+
+    &:focus + .footer__email-label,
+    &:not(:placeholder-shown) + .footer__email-label {
+      transform: translateY(-40px);
+      color: $tertiary-text-color;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
     top: 16px;
     left: 16px;
   }
@@ -75,7 +98,7 @@
     color: $accent-color;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1440px) {
     margin: 0;
   }
 }
