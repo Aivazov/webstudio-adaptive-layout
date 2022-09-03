@@ -290,11 +290,11 @@ section .container {
   }
 }
 
-.logo3 {
+.nav__logo {
   padding: 16px 0;
 }
 @media screen and (min-width: 768px) {
-  .logo3 {
+  .nav__logo {
     padding: 26px 0;
   }
 }
@@ -1176,7 +1176,7 @@ footer h2,
   }
 }
 
-.logo2 {
+.footer__logo {
   display: block;
   padding-top: 60px;
   background-color: #2f303a;
@@ -1184,7 +1184,7 @@ footer h2,
   text-align: center;
 }
 @media screen and (min-width: 1440px) {
-  .logo2 {
+  .footer__logo {
     text-align: left;
   }
 }
