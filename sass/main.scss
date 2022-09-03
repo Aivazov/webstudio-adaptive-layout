@@ -6,36 +6,37 @@
 @import "./components/logo";
 
 @import "./components/navigation/nav";
+@import "./components/navigation/nav__effects";
 @import "./components/hero__section/hero";
 
-@import './components/modal-window/backdrop';
-@import './components/modal-window/modal-window';
-@import './components/modal-window/request-form';
-@import './components/modal-window/request-form__icons';
+@import "./components/modal-window/backdrop";
+@import "./components/modal-window/modal-window";
+@import "./components/modal-window/request-form";
+@import "./components/modal-window/request-form__icons";
 
 @import "./components/skills__section/soft-skills";
 @import "./components/skills__section/soft-skills__icons";
 @import "./components/skills__section/soft-skills__text";
 @import "./components/skills__section/what-we-do";
 
-@import './components/our-team__section/our-team';
-@import './components/our-team__section/our-team__list';
-@import './components/our-team__section/our-team__title';
-@import './components/our-team__section/our-team__img';
-@import './components/our-team__section/our-team__text';
-@import './components/our-team__section/our-team__icons';
+@import "./components/our-team__section/our-team";
+@import "./components/our-team__section/our-team__list";
+@import "./components/our-team__section/our-team__title";
+@import "./components/our-team__section/our-team__img";
+@import "./components/our-team__section/our-team__text";
+@import "./components/our-team__section/our-team__icons";
 
-@import './components/regular-clients__section/regular-clients';
-@import './components/regular-clients__section/regular-clients__icons';
+@import "./components/regular-clients__section/regular-clients";
+@import "./components/regular-clients__section/regular-clients__icons";
 
-@import './components/footer/footer';
-@import './components/footer/footer__contacts';
-@import './components/footer/footer__social';
-@import './components/footer/footer__icons';
-@import './components/footer/footer__form';
+@import "./components/footer/footer";
+@import "./components/footer/footer__contacts";
+@import "./components/footer/footer__social";
+@import "./components/footer/footer__icons";
+@import "./components/footer/footer__form";
 
-// PORTFOLIO PAGE IMPORT 
+// PORTFOLIO PAGE IMPORT
 
-@import './pages/portfolio__page/portfolio__nav';
-@import './pages/portfolio__page/portfolio__gallery';
-@import './pages/portfolio__page/portfolio__overlay';
+@import "./pages/portfolio__page/portfolio__nav";
+@import "./pages/portfolio__page/portfolio__gallery";
+@import "./pages/portfolio__page/portfolio__overlay";

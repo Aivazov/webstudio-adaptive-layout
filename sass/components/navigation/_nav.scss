@@ -1,6 +1,57 @@
-.logo3 {
-  padding: 15px 0;
+.nav {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
-.nav {
+.nav__portfolio-page {
+  @media screen and (min-width: 768px) {
+    border-bottom: 1px solid #ececec;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 94px;
+  }
+}
+
+.logo3 {
+  padding: 16px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 26px 0;
+  }
+}
+
+.nav__list {
+  @media screen and (min-width: 768px) {
+    padding: 26px 0;
+    display: flex;
+  }
+}
+
+.nav__item {
+  @media screen and (min-width: 768px) {
+    margin-right: 62px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.nav__link {
+  @media screen and (min-width: 768px) {
+    padding: 33px 0 32px 0;
+  }
+}
+
+.contacts__nav__item {
+  @media screen and (min-width: 768px) {
+    &:last-child {
+      margin-top: 10px;
+    }
+  }
 }
