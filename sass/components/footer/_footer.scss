@@ -16,7 +16,9 @@ footer h2,
 }
 
 footer {
+  width: 100%;
   @media screen and (min-width: 1440px) {
+    width: none;
     display: flex;
     align-items: center;
   }
