@@ -277,6 +277,13 @@ section .container {
             align-items: center;
   }
 }
+@media screen and (min-width: 1440px) {
+  .nav {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .nav__portfolio-page {
@@ -307,6 +314,11 @@ section .container {
     display: flex;
   }
 }
+@media screen and (min-width: 1440px) {
+  .nav__list {
+    margin-left: 93px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .nav__item {
@@ -323,9 +335,57 @@ section .container {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .nav__contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: auto;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .contacts__nav__item:hover, .contacts__nav__item:focus {
+    color: #2196f3;
+    fill: #2196f3;
+  }
   .contacts__nav__item:last-child {
     margin-top: 10px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contacts__nav__item:last-child {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav__contacts-link:hover, .nav__contacts-link:focus {
+    color: #2196f3;
+    fill: #2196f3;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .nav__contacts-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 0;
+  }
+  .nav__contacts-link:last-child {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .icons-list {
+    margin-right: 10px;
   }
 }
 
@@ -947,9 +1007,13 @@ section .container {
 }
 
 .our-team__img {
-  width: 450px;
-  height: 460px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .our-team__img {
+    width: 450px;
+    height: 460px;
+  }
 }
 @media screen and (min-width: 768px) {
   .our-team__img {
@@ -1043,6 +1107,11 @@ section .container {
       flex-wrap: wrap;
   margin-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .regular-customers__list {
+    margin-bottom: 60px;
+  }
+}
 @media screen and (min-width: 1440px) {
   .regular-customers__list {
     margin-bottom: 94px;
@@ -1081,10 +1150,14 @@ section .container {
 .regular-customers__list-item:hover {
   border: 1px solid #2196f3;
 }
+@media screen and (min-width: 768px) {
+  .regular-customers__list-item {
+    width: 226px;
+  }
+}
 @media screen and (min-width: 1440px) {
   .regular-customers__list-item {
     width: 170px;
-    height: 92px;
   }
   .regular-customers__list-item:nth-child(2n+1) {
     margin-bottom: 0;

@@ -4,6 +4,10 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  @media screen and (min-width: 1440px) {
+    justify-content: flex-start;
+  }
 }
 
 .nav__portfolio-page {
@@ -30,6 +34,10 @@
     padding: 26px 0;
     display: flex;
   }
+
+  @media screen and (min-width: 1440px) {
+    margin-left: 93px;
+  }
 }
 
 .nav__item {
@@ -48,10 +56,55 @@
   }
 }
 
+.nav__contacts {
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+}
+
 .contacts__nav__item {
   @media screen and (min-width: 768px) {
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      fill: $accent-color;
+    }
+
     &:last-child {
       margin-top: 10px;
     }
+  }
+
+  @media screen and (min-width: 1440px) {
+    &:last-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.nav__contacts-link {
+  @media screen and (min-width: 768px) {
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      fill: $accent-color;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+
+    &:last-child {
+      margin-left: 30px;
+    }
+  }
+}
+
+.icons-list {
+  @media screen and (min-width: 1440px) {
+    margin-right: 10px;
   }
 }

@@ -1,5 +1,4 @@
 .regular-customers__title {
-
   @media screen and (min-width: 1440px) {
     padding-bottom: 50px;
   }
@@ -10,6 +9,10 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+  }
 
   @media screen and (min-width: 1440px) {
     margin-bottom: 94px;
@@ -46,9 +49,12 @@
     border: 1px solid $accent-color;
   }
 
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+
   @media screen and (min-width: 1440px) {
     width: 170px;
-    height: 92px;
 
     &:nth-child(2n + 1) {
       margin-bottom: 0;
