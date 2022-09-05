@@ -1203,6 +1203,20 @@ footer h2,
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .footer-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .footer-title {
   color: #ffffff;
   text-transform: uppercase;
@@ -1231,7 +1245,6 @@ footer h2,
             align-items: center;
   }
 }
-
 .footer-contacts {
   background-color: inherit;
 }
@@ -1308,6 +1321,11 @@ footer h2,
     margin-bottom: 25px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .footer-social {
+    margin-left: 70px;
+  }
+}
 
 .footer-social__icons-list {
   margin-bottom: 60px;
@@ -1353,6 +1371,17 @@ footer h2,
     -webkit-box-pack: right;
         -ms-flex-pack: right;
             justify-content: right;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .subscribe-form {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer-form {
+    margin-bottom: 20px;
   }
 }
 
@@ -1409,7 +1438,7 @@ footer h2,
 }
 @media screen and (min-width: 1440px) {
   .footer__email-input {
-    min-width: 357px;
+    width: 358px;
     margin-right: 8px;
   }
   .footer__email-input:not(:-moz-placeholder-shown) + .footer__email-label {

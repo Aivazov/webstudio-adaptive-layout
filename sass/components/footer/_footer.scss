@@ -22,6 +22,14 @@ footer {
   }
 }
 
+.footer-block {
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
 .footer-title {
   color: $tertiary-text-color;
   text-transform: uppercase;
@@ -41,5 +49,9 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+  }
+
+  @media screen and (min-width: 1440px) {
+    // margin-right: 70px;
   }
 }

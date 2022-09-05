@@ -6,6 +6,16 @@
     align-items: center;
     justify-content: right;
   }
+
+  @media screen and (min-width: 1440px) {
+    padding-bottom: 0;
+  }
+}
+
+.footer-form {
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 20px;
+  }
 }
 
 .footer__email-input-block {
@@ -46,7 +56,7 @@
   }
 
   @media screen and (min-width: 1440px) {
-    min-width: 357px;
+    width: 358px;
     margin-right: 8px;
 
     &:focus + .footer__email-label,
