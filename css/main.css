@@ -177,6 +177,10 @@ summary {
   letter-spacing: 0.03em;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
   color: #212121;
@@ -331,7 +335,7 @@ section .container {
 
 @media screen and (min-width: 768px) {
   .nav__link {
-    padding: 33px 0 32px 0;
+    padding: 33px 0 33px 0;
   }
 }
 
@@ -552,6 +556,7 @@ section .container {
   opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
   transition: opacity 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  overflow-y: scroll;
 }
 
 .is-hidden {
