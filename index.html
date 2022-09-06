@@ -14,10 +14,28 @@
     <title>WebStudio Layout</title>
   </head>
   <body>
-    <header class="container">
-      <nav class="nav">
+    <header class="">
+      <nav class="nav container">
         <a href="#" class="logo nav__logo">WebStudio</a>
-        <ul class="nav__list">
+        <button
+          type="button"
+          class="nav__button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg width="30" height="30" aria-label="mobile menu switcher">
+            <use
+              class="menu-open-icon"
+              href="./images/icons-sprite/icons-sprite.svg#menu-open"
+            ></use>
+            <use
+              class="menu-close-icon"
+              href="./images/icons-sprite/icons-sprite.svg#menu-close"
+            ></use>
+          </svg>
+        </button>
+        <ul class="nav__list" data-menu-button>
           <li class="nav__item">
             <a href="" class="active nav__link">Studio</a>
           </li>
@@ -30,7 +48,7 @@
             <a href="" class="active-hrv nav__link">Contacts</a>
           </li>
         </ul>
-        <ul class="nav__contacts">
+        <ul class="nav__contacts" data-menu-button>
           <li class="contacts__nav__item">
             <a class="nav__contacts-link" href="mailto:info@devstudio.com">
               <svg class="icons-list" width="16" height="12">
@@ -622,13 +640,30 @@
       refs.backdrop.addEventListener("click", logBackdropClick);
 
       function toggleModal() {
-        document.body.classList.toggle('modal-open');
+        document.body.classList.toggle("modal-open");
         refs.backdrop.classList.toggle("is-hidden");
       }
 
       function logBackdropClick() {
         // console.log("This is the click into backdrop");
       }
+
+      // script for the burger-menu open-closing
+
+      (() => {
+        const menuBtnRef = document.querySelector("[data-menu-button]");
+        // const mobileMenuRef = document.querySelector("[data-menu]");
+
+        menuBtnRef.addEventListener("click", () => {
+          const expanded =
+            menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+
+          menuBtnRef.classList.toggle("is-open");
+          menuBtnRef.setAttribute("aria-expanded", !expanded);
+
+          // mobileMenuRef.classList.toggle("is-open");
+        });
+      })();
 
       // script for the form processing tracking
 

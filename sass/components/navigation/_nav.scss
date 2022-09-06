@@ -1,12 +1,36 @@
+header {
+  position: relative;
+}
+
 .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & .nav__list {
+    // display: none;
+  }
+
+  & .nav__contacts {
+    // display: none;
+  }
+
   @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    & .nav__list {
+      display: flex;
+    }
+
+    & .nav__contacts {
+      display: block;
+    }
   }
 
   @media screen and (min-width: 1440px) {
     justify-content: flex-start;
+
+    & .nav__contacts {
+      display: flex;
+    }
   }
 }
 
@@ -29,7 +53,59 @@
   }
 }
 
+.nav__button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  & .menu-close-icon {
+    display: none;
+  }
+
+  &.is-open .menu-close-icon {
+    display: block;
+  }
+
+  &.is-open .menu-open-icon {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-open-icon {
+  width: 24px;
+  height: 16px;
+}
+
+.menu-close-icon {
+  width: 19px;
+  height: 19px;
+}
+
+// MENU LIST NAVIGATION
+
 .nav__list {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    z-index: 2;
+    // left: 50%;
+    // transform: translate(-50% -50%);
+
+    width: 100%;
+    // display: none;
+    &.is-open {
+      display: block;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     padding: 26px 0;
     display: flex;
@@ -41,6 +117,12 @@
 }
 
 .nav__item {
+  @media screen and (max-width: 767px) {
+    padding: 15px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
   @media screen and (min-width: 768px) {
     margin-right: 62px;
 
@@ -51,12 +133,33 @@
 }
 
 .nav__link {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
   @media screen and (min-width: 768px) {
     padding: 33px 0 33px 0;
   }
 }
 
 .nav__contacts {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 178%;
+    left: 0;
+
+    z-index: 2;
+    // left: 50%;
+    // transform: translate(-50% -50%);
+
+    width: 100%;
+
+    display: none;
+    &.is-open {
+      display: block;
+    }
+  }
+
   @media screen and (min-width: 1440px) {
     display: flex;
     align-items: center;
@@ -79,6 +182,7 @@
 
   @media screen and (min-width: 1440px) {
     &:last-child {
+      margin-left: 30px;
       margin-top: 0;
     }
   }
@@ -96,10 +200,6 @@
     display: flex;
     align-items: center;
     margin-left: 0;
-
-    &:last-child {
-      margin-left: 30px;
-    }
   }
 }
 
