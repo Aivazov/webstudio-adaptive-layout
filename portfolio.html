@@ -14,17 +14,39 @@
     <title>WebStudio Portfolio</title>
   </head>
   <body>
-    <header class="nav__portfolio-page">
-      <nav class="container nav">
+    <header class="">
+      <nav class="nav container">
         <a href="#" class="logo nav__logo">WebStudio</a>
-        <ul class="nav__list">
-          <li class="nav__item"><a href="./index.html" class="active-hrv nav__link">Studio</a></li>
+        <button
+          type="button"
+          class="nav__button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button2
+        >
+          <svg width="30" height="30" aria-label="mobile menu switcher">
+            <use
+              class="menu-open-icon"
+              href="./images/icons-sprite/icons-sprite.svg#menu-open"
+            ></use>
+            <use
+              class="menu-close-icon"
+              href="./images/icons-sprite/icons-sprite.svg#menu-close"
+            ></use>
+          </svg>
+        </button>
+        <ul class="nav__list" data-menu3>
+          <li class="nav__item">
+            <a href="./index.html" class="active-hrv nav__link">Studio</a>
+          </li>
           <li class="nav__item">
             <a href="./portfolio.html" class="active nav__link">Portfolio</a>
           </li>
-          <li class="nav__item"><a href="" class="active-hrv nav__link">Contacts</a></li>
+          <li class="nav__item">
+            <a href="" class="active-hrv nav__link">Contacts</a>
+          </li>
         </ul>
-        <ul class="nav__contacts">
+        <ul class="nav__contacts" data-menu4>
           <li class="contacts__nav__item">
             <a class="nav__contacts-link" href="mailto:info@devstudio.com">
               <svg class="icons-list" width="16" height="12">
@@ -72,7 +94,8 @@
         <ul class="gallery__list">
           <li class="gallery__list-item">
             <a class="gallery__list-link" href="">
-              <img class="gallery__list-img"
+              <img
+                class="gallery__list-img"
                 src="./images/portfolio-page/portfolio-1.jpg"
                 alt="UI Designer"
               />
@@ -89,7 +112,8 @@
           </li>
           <li class="gallery__list-item">
             <a class="gallery__list-link" href=""
-              ><img class="gallery__list-img"
+              ><img
+                class="gallery__list-img"
                 src="./images/portfolio-page/portfolio-2.jpg"
                 alt="UI Designer"
                 width="370"
@@ -103,12 +127,15 @@
                 </p>
               </div></a
             >
-            <h2 class="gallery__list-title">Poster New Orlean vs Golden Star</h2>
+            <h2 class="gallery__list-title">
+              Poster New Orlean vs Golden Star
+            </h2>
             <p class="gallery__list-text">Design</p>
           </li>
           <li class="gallery__list-item">
             <a class="gallery__list-link" href=""
-              ><img class="gallery__list-img"
+              ><img
+                class="gallery__list-img"
                 src="./images/portfolio-page/portfolio-3.jpg"
                 alt="UI Designer"
                 width="370"
@@ -127,7 +154,8 @@
           </li>
           <li class="gallery__list-item">
             <a class="gallery__list-link" href=""
-              ><img class="gallery__list-img"
+              ><img
+                class="gallery__list-img"
                 src="./images/portfolio-page/portfolio-4.jpg"
                 alt="UI Designer"
                 width="370"
@@ -146,7 +174,8 @@
           </li>
           <li class="gallery__list-item">
             <a class="gallery__list-link" href=""
-              ><img class="gallery__list-img"
+              ><img
+                class="gallery__list-img"
                 src="./images/portfolio-page/portfolio-5.jpg"
                 alt="UI Designer"
                 width="370"
@@ -165,7 +194,8 @@
           </li>
           <li class="gallery__list-item">
             <a class="gallery__list-link" href=""
-              ><img class="gallery__list-img"
+              ><img
+                class="gallery__list-img"
                 src="./images/portfolio-page/portfolio-6.jpg"
                 alt="UI Designer"
                 width="370"
@@ -184,7 +214,8 @@
           </li>
           <li class="gallery__list-item">
             <a class="gallery__list-link" href=""
-              ><img class="gallery__list-img"
+              ><img
+                class="gallery__list-img"
                 src="./images/portfolio-page/portfolio-7.jpg"
                 alt="UI Designer"
                 width="370"
@@ -203,7 +234,8 @@
           </li>
           <li class="gallery__list-item">
             <a class="gallery__list-link" href=""
-              ><img class="gallery__list-img"
+              ><img
+                class="gallery__list-img"
                 src="./images/portfolio-page/portfolio-8.jpg"
                 alt="UI Designer"
                 width="370"
@@ -222,7 +254,8 @@
           </li>
           <li class="gallery__list-item">
             <a class="gallery__list-link" href=""
-              ><img class="gallery__list-img"
+              ><img
+                class="gallery__list-img"
                 src="./images/portfolio-page/portfolio-9.jpg"
                 alt="UI Designer"
                 width="370"
@@ -242,7 +275,7 @@
         </ul>
       </section>
     </main>
-    
+
     <!-- FOOTER -->
 
     <footer>
@@ -338,5 +371,63 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      // script for the modal window activation/deactivation
+
+      const refs = {
+        openModalBtn: document.querySelector("[data-open-modal-window]"),
+        closeModalBtn: document.querySelector("[data-close-modal-window]"),
+        backdrop: document.querySelector("[data-backdrop]"),
+      };
+
+      refs.openModalBtn.addEventListener("click", toggleModal);
+      refs.closeModalBtn.addEventListener("click", toggleModal);
+
+      refs.backdrop.addEventListener("click", logBackdropClick);
+
+      function toggleModal() {
+        document.body.classList.toggle("modal-open");
+        refs.backdrop.classList.toggle("is-hidden");
+      }
+
+      function logBackdropClick() {
+        // console.log("This is the click into backdrop");
+      }
+
+      // script for the burger-menu open-closing
+
+      (() => {
+        const menuBtnRef = document.querySelector("[data-menu-button]");
+        const mobileMenuRef = document.querySelector("[data-menu]");
+        const mobileMenuRef2 = document.querySelector("[data-menu2]");
+
+        menuBtnRef.addEventListener("click", () => {
+          const expanded =
+            menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+
+          menuBtnRef.classList.toggle("is-open");
+          menuBtnRef.setAttribute("aria-expanded", !expanded);
+
+          mobileMenuRef.classList.toggle("is-open");
+          mobileMenuRef2.classList.toggle("is-open");
+        });
+      })();
+
+      // script for the form processing tracking
+
+      (() => {
+        document
+          .querySelector(".request-form")
+          .addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`)
+            );
+          });
+      })();
+    </script>
+    <!-- <script src="./js/script.js"></script> -->
   </body>
 </html>

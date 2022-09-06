@@ -35,7 +35,7 @@
             ></use>
           </svg>
         </button>
-        <ul class="nav__list" data-menu-button>
+        <ul class="nav__list" data-menu>
           <li class="nav__item">
             <a href="" class="active nav__link">Studio</a>
           </li>
@@ -48,7 +48,7 @@
             <a href="" class="active-hrv nav__link">Contacts</a>
           </li>
         </ul>
-        <ul class="nav__contacts" data-menu-button>
+        <ul class="nav__contacts" data-menu2>
           <li class="contacts__nav__item">
             <a class="nav__contacts-link" href="mailto:info@devstudio.com">
               <svg class="icons-list" width="16" height="12">
@@ -652,7 +652,8 @@
 
       (() => {
         const menuBtnRef = document.querySelector("[data-menu-button]");
-        // const mobileMenuRef = document.querySelector("[data-menu]");
+        const mobileMenuRef = document.querySelector("[data-menu]");
+        const mobileMenuRef2 = document.querySelector("[data-menu2]");
 
         menuBtnRef.addEventListener("click", () => {
           const expanded =
@@ -661,7 +662,8 @@
           menuBtnRef.classList.toggle("is-open");
           menuBtnRef.setAttribute("aria-expanded", !expanded);
 
-          // mobileMenuRef.classList.toggle("is-open");
+          mobileMenuRef.classList.toggle("is-open");
+          mobileMenuRef2.classList.toggle("is-open");
         });
       })();
 
@@ -679,5 +681,7 @@
           });
       })();
     </script>
+
+    <!-- <script src="./js/script.js"></script> -->
   </body>
 </html>
