@@ -463,6 +463,11 @@ header {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .nav__contacts-link:hover, .nav__contacts-link:focus {
+    color: #2196f3;
+  }
+}
 @media screen and (min-width: 768px) {
   .nav__contacts-link:hover, .nav__contacts-link:focus {
     color: #2196f3;
@@ -487,6 +492,11 @@ header {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .active:hover, .active:focus {
+    color: #2196f3;
+  }
+}
 @media screen and (min-width: 768px) {
   .active {
     color: #2196f3;
@@ -1009,6 +1019,11 @@ header {
   margin-bottom: 30px;
 }
 
+.what-we-do__title {
+  padding: 0;
+  margin-bottom: 50px;
+}
+
 .what-we-do-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1023,21 +1038,28 @@ header {
 
 .what-we-do-list__content {
   position: relative;
+  max-height: 294px;
 }
 
-.what-we-do-list-content p {
+.what-we-do__text {
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
   padding: 27px 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428;
+  letter-spacing: 0.03em;
   background: rgba(47, 48, 58, 0.8);
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1439px) {
   .what-we-do__title,
 .what-we-do-list {
     display: none;
@@ -1661,6 +1683,16 @@ footer {
   transition: fill 500ms linear;
 }
 
+.nav-bar {
+  border: 1px solid #ececec;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1440px) {
+  .nav-bar {
+    margin-bottom: 94px;
+  }
+}
+
 .portfolio__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1915,9 +1947,27 @@ footer {
   background-color: #2196f3;
   opacity: 0.9;
 }
+@media screen and (min-width: 480px) {
+  .overlay {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .overlay {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .overlay {
+    width: 370px;
+  }
+}
 
 .overlay__text {
   text-align: left;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5555;
   background-color: transparent;
   padding: 63px 24px 0 24px;
   color: #ffffff;

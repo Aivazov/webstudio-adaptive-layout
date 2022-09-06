@@ -1,3 +1,12 @@
+.nav-bar {
+  border: 1px solid #ececec;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 94px;
+  }
+}
+
 .portfolio__nav {
   display: flex;
   flex-direction: row;

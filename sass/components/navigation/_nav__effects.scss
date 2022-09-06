@@ -1,4 +1,10 @@
 .active {
+  @media screen and (max-width: 767px) {
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
   @media screen and (min-width: 768px) {
     color: $accent-color;
     position: relative;
