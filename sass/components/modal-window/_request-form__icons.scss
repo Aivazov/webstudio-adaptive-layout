@@ -5,6 +5,11 @@
 
   fill: $primary-text-color;
   transition: fill 250ms linear;
+  
+  @media screen and (min-width: 1440px) {
+    top: 18%;
+    left: 15px;
+  }
 }
 
 .name__form-icon {
@@ -18,6 +23,11 @@
 }
 
 .email__form-icon {
+  top: 7%;
   width: 15px;
   height: 12px;
+
+  @media screen and (min-width: 1440px) {
+    top: 18%;
+  }
 }

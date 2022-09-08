@@ -372,17 +372,17 @@
       </div>
     </footer>
 
-    <!-- <script>
+    <script>
       // script for the burger-menu open-closing
 
       (() => {
-        const menuBtnRef2 = document.querySelector("[data-menu-button2]");
+        const menuBtnRef = document.querySelector("[data-menu-button2]");
         const mobileMenuRef3 = document.querySelector("[data-menu3]");
         const mobileMenuRef4 = document.querySelector("[data-menu4]");
 
-        menuBtnRef2.addEventListener("click", () => {
+        menuBtnRef.addEventListener("click", () => {
           const expanded =
-            menuBtnRef2.getAttribute("aria-expanded") === "true" || false;
+            menuBtnRef.getAttribute("aria-expanded") === "true" || false;
 
           menuBtnRef.classList.toggle("is-open");
           menuBtnRef.setAttribute("aria-expanded", !expanded);
@@ -391,7 +391,7 @@
           mobileMenuRef4.classList.toggle("is-open");
         });
       })();
-    </script> -->
+    </script>
     <!-- <script src="./js/script.js"></script> -->
   </body>
 </html>

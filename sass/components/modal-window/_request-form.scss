@@ -15,7 +15,7 @@
   margin-top: 40px;
   margin-bottom: 44px;
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1440px) {
     margin-bottom: 30px;
   }
 }
@@ -31,8 +31,9 @@
     fill: $accent-color;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1440px) {
     position: relative;
+    width: 100%;
     margin: 0 auto;
     padding: 0;
     display: flex;
@@ -56,6 +57,10 @@
   &:hover,
   &:focus {
     outline: 1px solid $accent-color;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 100%;
   }
 }
 
@@ -94,6 +99,11 @@
   font-size: 14px;
   line-height: 1.16666;
   letter-spacing: 0.01em;
+
+  @media screen and (min-width: 1440px) {
+    top: 16%;
+    left: 42px;
+  }
 }
 
 .field-form__text-comments {
