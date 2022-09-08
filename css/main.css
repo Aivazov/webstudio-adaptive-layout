@@ -569,7 +569,7 @@ header {
           align-items: center;
   text-align: center;
   width: 100%;
-  height: 400px;
+  height: auto;
   width: 100%;
   color: #ffffff;
   font-family: Roboto, serif;
@@ -588,7 +588,6 @@ header {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
-    min-height: 400px;
     max-width: 100%;
   }
 }
@@ -596,7 +595,7 @@ header {
   .hero {
     margin-bottom: 94px;
     max-width: 1600px;
-    height: 600px;
+    min-height: 600px;
   }
 }
 
@@ -1696,6 +1695,9 @@ footer {
 .footer-button:hover, .footer-button:focus {
   background-color: #f5f4fa;
   color: #2196f3;
+}
+.footer-button:hover .icon-send, .footer-button:focus .icon-send {
+  fill: #2196f3;
 }
 @media screen and (min-width: 1440px) {
   .footer-button {

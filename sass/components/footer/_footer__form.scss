@@ -119,6 +119,11 @@
     color: $accent-color;
   }
 
+  &:hover .icon-send,
+  &:focus .icon-send {
+    fill: $accent-color;
+  }
+
   @media screen and (min-width: 1440px) {
     margin: 0;
   }
